@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Number 21</title>
+    <script>
+      // Prevent other libraries from defining fetch as a getter-only property
+      // which causes collisions with Capacitor and other polyfills.
+      const _origDefineProperty = Object.defineProperty;
+      Object.defineProperty = function(obj, prop, descriptor) {
+        if (obj === window && prop === 'fetch' && descriptor.get && !descriptor.set) {
+          let val = descriptor.get();
+          descriptor.get = function() { return val; };
+          descriptor.set = function(newVal) { val = newVal; };
+          descriptor.configurable = true;
+        }
+        return _origDefineProperty(obj, prop, descriptor);
+      };
+    </script>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00E5FF" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23111'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='200' font-weight='bold' fill='%2300E5FF'%3E21%3C/text%3E%3C/svg%3E">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-CD0z6ioC.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C4VlyLRc.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+

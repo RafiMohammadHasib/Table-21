@@ -1,0 +1,6 @@
+{
+  "name": "Table Number 21",
+  "description": "A number counting game from 1 to 21 where you have to avoid saying 21.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
