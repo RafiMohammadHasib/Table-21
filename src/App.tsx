@@ -243,8 +243,8 @@ export default function App() {
 
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-bg-base text-text-light font-sans selection:bg-accent/30 relative">
-      <div className="w-full max-w-md bg-bg-panel shadow-[16px_16px_0_var(--color-border-subtle)] rounded-none overflow-hidden border-2 border-border-subtle relative pb-12 z-10">
+    <div className="h-[100dvh] sm:min-h-[100dvh] sm:h-auto flex flex-col items-center justify-center sm:p-4 bg-bg-base text-text-light font-sans selection:bg-accent/30 relative w-full overflow-hidden">
+      <div className="w-full h-[100dvh] sm:h-auto max-w-md bg-bg-panel sm:shadow-[16px_16px_0_var(--color-border-subtle)] rounded-none overflow-hidden sm:border-2 border-border-subtle relative pb-12 z-10 flex flex-col">
         
         {/* Header */}
         <header className="py-6 px-8 text-center bg-[#111] border-b-2 border-border-subtle flex items-center justify-between relative">
@@ -272,7 +272,7 @@ export default function App() {
           </button>
         </header>
 
-        <main className="px-6 py-8 min-h-[500px] flex flex-col relative">
+        <main className="px-4 sm:px-6 py-4 sm:py-8 flex flex-col flex-1 relative overflow-y-auto">
           <AnimatePresence mode="wait">
             
             {/* HOME PHASE */}
